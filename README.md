@@ -18,3 +18,5 @@ My submission for the Teller Bank Job challenge for ElixirConf EU 2023.
 password: portugal -->
 
 <!-- %TellerBank.ChallengeResult{account_number: "745477326035", balance_in_cents: "349782"} -->
+
+<!-- lisbonportugal! -->
