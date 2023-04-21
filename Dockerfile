@@ -1,4 +1,5 @@
-FROM ghcr.io/livebook-dev/livebook:latest-cuda11.8
+FROM ghcr.io/livebook-dev/livebook@sha256:e1e086eaac719235fb455ebbf82e8b65794ef4f2669d01a4b79645316ff9dd8b
+
 
 ENV LIVEBOOK_APP_SERVICE_NAME "🐳 Hugging Face - $SPACE_TITLE"
 ENV LIVEBOOK_APP_SERVICE_URL "https://huggingface.co/spaces/$SPACE_AUTHOR_NAME/$SPACE_REPO_NAME"
