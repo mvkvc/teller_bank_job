@@ -548,7 +548,7 @@ Kino.listen(form, fn %{data: %{username: username, password: password}, origin: 
     Kino.Frame.clear(frame)
     Kino.Frame.append(frame, content)
   else
-    content = Kino.Markdown.new("ERROR: Username and password required.")
+    content = Kino.Markdown.new("Please enter your username and password.")
     Kino.Frame.clear(frame)
     Kino.Frame.append(frame, content, to: origin)
   end
