@@ -1,0 +1,322 @@
+<!-- livebook:{"app_settings":{"access_type":"public","slug":"teller-bank-job"}} -->
+
+# Teller Bank Challenge
+
+```elixir
+Mix.install([
+  :req,
+  :jason,
+  :kino,
+  :beam_file
+])
+```
+
+## Your Solution
+
+```elixir
+frame = Kino.Frame.new()
+```
+
+```elixir
+inputs = [
+  username: Kino.Input.text("Username"),
+  password: Kino.Input.text("Password")
+]
+
+form = Kino.Control.form(inputs, submit: "Submit", reset_on_submit: [:username, :password])
+```
+
+```elixir
+# Pursued this approach to solve x-token section, not sure if intended
+
+url = "https://lisbon.teller.engineering"
+
+headers = %{
+  user_agent: "Teller Bank iOS v1.3",
+  api_key: "Hello-Lisbon!",
+  device_id: "TU2CM7WPWZJVNK2N",
+  accept: "application/json"
+}
+
+%Req.Response{status: status, headers: headers, body: body} =
+  Req.get!("#{url}/config", headers: headers)
+
+utils = Map.get(body, "utils")
+arg_a = Map.get(utils, "arg_a") |> String.upcase() |> Base.decode16!()
+arg_b = Map.get(utils, "arg_b") |> String.upcase() |> Base.decode16!()
+code = Map.get(utils, "code") |> String.upcase() |> Base.decode16!()
+
+IO.inspect(code, label: "`code` in utils")
+code = :zlib.gunzip(code)
+
+path = Path.absname("./Elixir.EncoderDecoder.beam")
+File.write!(path, code)
+
+EncoderDecoder
+
+{:ok, code} = BeamFile.elixir_code(EncoderDecoder)
+IO.puts("`code` module source:")
+IO.puts(code)
+```
+
+```elixir
+# Copied from above with z() removed
+
+defmodule BootlegEncDec do
+  def transform(key, payload) do
+    bytes = :erlang.binary_to_list(payload)
+    key = <<key::binary, key_suffix()::binary>>
+
+    String.Chars.to_string(
+      Enum.map(
+        Stream.zip(
+          Stream.cycle(:erlang.binary_to_list(key)),
+          bytes
+        ),
+        fn {a, b} -> :erlang.bxor(:erlang.band(a, 10), b) end
+      )
+    )
+  end
+
+  defp key_suffix do
+    ":Portugal"
+  end
+end
+```
+
+```elixir
+defmodule TellerBank do
+  defmodule ChallengeResult do
+    @type t :: %__MODULE__{
+            account_number: String.t(),
+            balance_in_cents: integer
+          }
+    defstruct [:account_number, :balance_in_cents]
+  end
+
+  defmodule Client do
+    @type username() :: String.t()
+    @type password() :: String.t()
+
+    @url "https://lisbon.teller.engineering"
+    @user_agent "Teller Bank iOS v1.3"
+    @api_key "Hello-Lisbon!"
+    @device_id "TU2CM7WPWZJVNK2N"
+    @sms_code "001337"
+
+    defp gen_f_token(spec, last_request_id, username) do
+      inputs = %{
+        "api-key" => @api_key,
+        "device-id" => @device_id,
+        "username" => username,
+        "last-request-id" => last_request_id
+      }
+
+      spec =
+        spec
+        |> Base.decode64!(padding: false)
+        |> Jason.decode!()
+
+      values = Map.get(spec, "values")
+      sep = Map.get(spec, "separator")
+
+      prehash =
+        Enum.map(values, &Map.get(inputs, &1))
+        |> Enum.join(sep)
+
+      token =
+        :crypto.hash(:sha256, prehash)
+        |> Base.encode32()
+        |> String.downcase()
+        |> String.trim("=")
+
+      token
+    end
+
+    defp get_header_val(headers, key) do
+      Enum.find_value(headers, fn {k, v} ->
+        if k == key, do: v
+      end)
+    end
+
+    def login({username, password}) do
+      headers = %{
+        user_agent: @user_agent,
+        api_key: @api_key,
+        device_id: @device_id,
+        content_type: "application/json",
+        accept: "application/json"
+      }
+
+      body =
+        Jason.encode!(%{
+          username: username,
+          password: password
+        })
+
+      response = Req.post!("#{@url}/login", body: body, headers: headers)
+
+      {response, username}
+    end
+
+    def request_mfa({response, username}) do
+      request_token = get_header_val(response.headers, "request-token")
+      last_request_id = get_header_val(response.headers, "f-request-id")
+      f_token_spec = get_header_val(response.headers, "f-token-spec")
+
+      f_token = gen_f_token(f_token_spec, last_request_id, username)
+
+      sms_id =
+        response.body
+        |> Map.get("devices")
+        |> Enum.find(&(&1["type"] == "SMS"))
+        |> Map.get("id")
+
+      headers = %{
+        teller_is_hiring: "I know!",
+        user_agent: @user_agent,
+        api_key: @api_key,
+        device_id: @device_id,
+        request_token: request_token,
+        f_token: f_token,
+        content_type: "application/json",
+        accept: "application/json"
+      }
+
+      body = %{device_id: sms_id} |> Jason.encode!()
+
+      response = Req.post!("#{@url}/login/mfa/request", body: body, headers: headers)
+
+      {response, username}
+    end
+
+    def submit_mfa({response, username}) do
+      request_token = get_header_val(response.headers, "request-token")
+      last_request_id = get_header_val(response.headers, "f-request-id")
+      f_token_spec = get_header_val(response.headers, "f-token-spec")
+
+      f_token = gen_f_token(f_token_spec, last_request_id, username)
+
+      x_token = BootlegEncDec.transform(username, f_token) |> Base.encode64()
+
+      headers = %{
+        x_token: x_token,
+        teller_is_hiring: "I know!",
+        user_agent: @user_agent,
+        api_key: @api_key,
+        device_id: @device_id,
+        request_token: request_token,
+        f_token: f_token,
+        content_type: "application/json",
+        accept: "application/json"
+      }
+
+      body = %{code: @sms_code} |> Jason.encode!()
+
+      response = Req.post!("#{@url}/login/mfa", body: body, headers: headers)
+
+      {response, username}
+    end
+
+    def get_account_balances({response, username}) do
+      request_token = get_header_val(response.headers, "request-token")
+      last_request_id = get_header_val(response.headers, "f-request-id")
+      f_token_spec = get_header_val(response.headers, "f-token-spec")
+
+      f_token = gen_f_token(f_token_spec, last_request_id, username)
+
+      enc_session = Map.get(response.body, "enc_session_key")
+
+      acc_id =
+        response.body["accounts"]["checking"]
+        |> List.first()
+        |> Map.get("id")
+
+      headers = %{
+        teller_is_hiring: "I know!",
+        user_agent: @user_agent,
+        api_key: @api_key,
+        device_id: @device_id,
+        request_token: request_token,
+        f_token: f_token,
+        accept: "application/json"
+      }
+
+      response = Req.get!("#{@url}/accounts/#{acc_id}/balances", headers: headers)
+
+      {response, username, acc_id, enc_session}
+    end
+
+    def get_account_details({response, username, acc_id, enc_session}) do
+      request_token = get_header_val(response.headers, "request-token")
+      last_request_id = get_header_val(response.headers, "f-request-id")
+      f_token_spec = get_header_val(response.headers, "f-token-spec")
+
+      f_token = gen_f_token(f_token_spec, last_request_id, username)
+
+      available_balance = Map.get(response.body, "available") |> to_string()
+
+      headers = %{
+        teller_is_hiring: "I know!",
+        user_agent: @user_agent,
+        api_key: @api_key,
+        device_id: @device_id,
+        request_token: request_token,
+        f_token: f_token,
+        accept: "application/json"
+      }
+
+      response = Req.get!("#{@url}/accounts/#{acc_id}/details", headers: headers)
+
+      {response, enc_session, available_balance}
+    end
+
+    def get_balance({response, enc_session, available_balance}) do
+      # Map says AES-128 but key is too big looks like AES-256 was intended
+      enc_map = enc_session |> Base.decode64!() |> Jason.decode!()
+      key = Map.get(enc_map, "key") |> Base.decode64!()
+      cipher = get_header_val(response.body, "number") |> Base.decode64!()
+
+      decrypted_cipher = :crypto.crypto_one_time(:aes_256_ecb, key, cipher, false)
+      <<_h::binary-32, account_number::binary-12, _t::binary>> = decrypted_cipher
+
+      %TellerBank.ChallengeResult{
+        account_number: account_number,
+        balance_in_cents: available_balance
+      }
+    end
+
+    @spec fetch(username, password) :: ChallengeResult.t()
+    def fetch(username, password) do
+      {username, password}
+      |> login()
+      |> request_mfa()
+      |> submit_mfa()
+      |> get_account_balances()
+      |> get_account_details()
+      |> get_balance()
+    end
+  end
+end
+```
+
+```elixir
+Kino.listen(form, fn %{data: %{username: username, password: password}, origin: origin} ->
+  if username != "" and password != "" do
+    %TellerBank.ChallengeResult{account_number: account, balance_in_cents: balance} =
+      TellerBank.Client.fetch(username, password)
+
+    content =
+      Kino.Markdown.new(
+        "**Username**: #{username}, **Account**: #{account}, **Balance**: #{balance}"
+      )
+
+    Kino.Frame.clear(frame)
+    Kino.Frame.append(frame, content)
+  else
+    content = Kino.Markdown.new("Please enter your username and password.")
+    Kino.Frame.clear(frame)
+    Kino.Frame.append(frame, content, to: origin)
+  end
+end)
+```

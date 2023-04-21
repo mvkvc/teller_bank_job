@@ -1,6 +1,7 @@
-.elixir_ls
-.history
-.env
+/.elixir_ls/
+/.history/
+/.env
+/*.beam
 
 # The directory Mix will write compiled artifacts to.
 /_build/

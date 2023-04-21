@@ -10,6 +10,6 @@ ENV LIVEBOOK_PORT 7860
 
 EXPOSE 7860
 USER root
-COPY public-apps/ /public-apps
+COPY nbs/ /public-apps
 RUN mkdir -p /data
 RUN chmod 777 /data
