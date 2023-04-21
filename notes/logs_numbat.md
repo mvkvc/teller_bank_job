@@ -1,0 +1,160 @@
+  "utils": {
+    "arg_a": "555345524e414d45", USERNAME
+    "arg_b": "465f544f4b454e", F_TOKEN
+    "code": "1f8b08000000000000035d570b5c4c5b173fd399e695c969a69794462fa5f713514e254961f4c0478c69e65453f3726626532149e5f19508999f5eeabac9e37e2525ae1809e1de4f1ec95b12ca4d2ad7dbad6f4f4d57f73bbfdf9ab5f6daffb5f77a9cd9ebecf94b22dc2148ff5c6070c0a20079f44c0822744010e46e142c142805b84bb09827e163f83c6c8451381c81384ec2e1d0b872392e8855c831199927114905428cc6c7a438c6e3ca31be1ea6944a70b98c23e27b53e314629e5c2011cb48222e0f97c860a02489247c851023c9e4b8822787c5022109c3855c71fcc4784cce199d1cd9899684a570648ab83881922ac7b962599c0417e9c70ac45c3c852397708402999cc4954a31311fe60a85a4d119bad6f948398e7145babc149e1083530552bdbf835288601157cafc811388e35d8212b8b88c0a56958d8c09a963f361182ec6842ed1728150a6c7c746bd56e01851218f9b39ce1bae5c221adb238a2b4bd295c9b9b85c17e70a6418512c1163ba188e4b70bd7101ea39a7baba39831c397b38eb6b4dd9b88487c964ba3221864975e3b84219f603e6eefc4376732638339dffce8bab87564b8ce58af9c458a50437741688850231c6771eab9cabbb7310282504e994813a23d0e873129035203d02a2827418560881351bde67426178640566452862313c7a8b624f5679f0496f821bda04330928ca00bf6c3404026c2d1a8200264575c0ef66146682c9c52c88904f42e856843215a2c3188408d568080bccab552c1d060d61115a27b058289388c2862a3722444750227cdc0421aa503282a03051c526427535ba10b2193651d318c8661d431a9366c8daacb31c46684c003554ad055095948cb0502273c4763399e586cc70d344c642906310d30452e59359a8f74b98c162123a54651484cd22f4abaa810fe6108182d0d1313874dc04251ada781d4380151ae206abd4c0125dca24b3d6cea41bc001b01713706600d35acb6db4dc900838b182c8f402439466c944ad61552b9925adb2813543550790356ea1a36eb1e0919de06d6e88aa9f8c6c06916f432015052123f968086a8dd26c9814b732e09e814abd002650189aaad0ec806224b54835816238aa420814a31f09a718abfa81761a4aa0984c4051d493885a1ba24c1b14f642ab1ec364443d1ba64f324169d3e9a64d745302c594813209944928d11335b446bd98a80dbc8e05accd541403b09023587e321dfa915037901a4d3ae9e630030296e6209d605b8b51b813804fd9a88bb4c2542ea834c552950fb42e40cb9a45b7847d01b1026188b95197d5c13cc40c84111888fdcb992c58039f3a12923b805bf9d1a7c2e06f19a579394345520d6fd6beaf7440fa8074b4b2012002202340c6e364132dc614d024ad6c0668b216630168cab875585a792a20ab71186badacc1d80282c7f9a0d1db03721887711eb7a6eb38d94d23072b4762f10244046437ce5f3bed7f91a98d73cc4e478bd199af106b6cf95a5b17ad9ea5b5836049483a608e5afd589c63fa695abbb1bc10b57a272d6e8a36b6117cb8400ef62290003194457ebbdc9764a2e697879725453079d3e666adbb7db9b926f360291ab477ba5fc79bd0a0f63b17ed729b3abbfa3a3a3b3bc209370eab9f3fd9dd5269607af6dcb9ef6b0607a74072c2dae15bc7152fea5f7c342f7ff02928dce9846722f3d8bda102fff44d5f8aafdd19b859fc6de3ba65b58d3e3dc545bcce70f1a99fd73ebd273730df407ae9b1b40dfe8bed192afb25a12565a15165f96f029671b86ef951ae611a25f959e4c7ab5b3f45871ac5537c2e3905565fde3933445a641fdd32e3596168599453a77d2cfed259b5f07ad6d506d7150d8c398bdaafdcd8d11ef7edd6d7b6bcc514bbc26cbfe6c5998f457a9c25e14fde4e0ce725e65fbaf8e742cbd9a4fa90e12bfe5bc410142ee16972bf021059d31fb539b3fabf3a8ccfe5f83a8ccfbdb9b65c9a1a4fd4ca7a01a09f6adea54ca1c62a41870fc1c932f1c8408c40e9bbead66cffd47e646fdc97d5efdf758b12138342c5716072f7081ed6e0c9c9182e037d3609d29de9e2e1e23ea29348475aaf0644e44393c4a0b749b9ebc51c6dcfc639d2d15ec387a871b84404f438c68726029c4602b39894abd1e8030d57015a9c40a4e9ec899ac549328902e76149909e2be8c0ae62491c583111ec342f365e00f66bcc64839759ad2c6a5b7141f268bea1fff6bdfcafa7239409d3a665d75f41b375b20cd2049e0a6a6bb25d5ed752df1d5659d63d0bf53d8e44ce48e9b9db1854e8f2979ef9aa6d59f7f74fbd85e60eb9fb453042df7fbe11e07977a7627de9f9b47769ef9efe1ab933529dbdc5a6d22136c8fbf20b13da8a60df3eae9555f9e9ee93d5a6532e5413a03f682b728ee6769b1a1cffe8bd23a77e5175d7fd96f20ac5835e794ddebcdaa4b417deba55f7d53e3ef4b04a62cc4ec93e23b66f064a98b3ba37b5d65692d75e93d1f1fae1862df1afbc7f3f1d6268fb64efa3f26ed8f1694c8f1b69a889e398b3396fee47c83bb121f844c64bfb184251c6c6f4b0fc2cdc81bd3d6bd081adca5a165146d33b71923d3d7bd7d325c9ab09a58d83f0e9610b2bd2ed4fe9a76ac45f06aa859d2df541f9fbbfb7cde9acd31d70bcd4c35ee55b7d30b0ebc63312672825f9d3d0edc6e194fe9c6f378452cf75e4d705d7dad4c5137e5e3f23b3b6e7d79a349fc6ca02930aee64e1f74dde4369732c8614736521ed22753187738a30f78cc59353179717fe9236fbdbdb3fe5c929afce56f47477c6cef9e6b6616eb2ebbba7f4ab05777a3e7fbf043e688c3698ae7936f466dae27f79c7c6f5b9f47e342eb5b475d90fcf8b2006189658ec7fa25c71be32e74a425ffa9d2d5bb383ab17dd1a8cef5c499a1f77e715195b3fe949d3f9ef2647b9c995b7438e2c3bdc46315b444b2979b9bce609ebae717ab587ebf470428ad9d445f6943a7bdc61593979c9a4893eb642f4b689a0f99028b9b3afabf7b79ad9776a78c73895ca41a7a642f67f9695b7842f29f1bb5750549c92fc7adbb4ed76bd976bff2227d419b16b840b7a3f7f4cdb3d07dba37475dc6ef2e873eaa0c729f6606ac9ee837ad61c66e4fcfd2f1f54593717ddc872609cd837bc3509bb3ce16e589d5b7fc67055d69ed545379e1d3cfdf4c8f740628f6bcbcfbcd62b7d1b9f52776c174edfb661e7f774e9ce6cc18b80e5d70a580bf61d0dcd17bb5b5496ed21d0d72ba507ae0f50fffaa926f250fcf0b03ae242898b4b58a970f289156bf6cf23e5aba3d8b769bdc91f369d3c1293b1b0b150a658c53da4b2a8ddf36f57a38666e78195fd85e58199d10483d83d0db4dcc3b4074ed7d637d1320ef81dccad9ef72aa6747298a47b2bd78c7b26e683e843a9f1147abbf2bd0fc6bc7929af6aa66f84faa30735cde34deac49c33e8a60b8850871ee61d4abe6d10f26ca27bd3caebef0f1997f8fd92fb55f5a974a5cdd2c4d5f7db171d40fecbf896d56c427be7a864d4c6db1e5ead77a8d8a86ac9b328d575bd07ceab5a121ff8d61f2871d8eaeedad5d0af5e77455537e7d6197b1fc3e2f42f83ddf6a81efbeaa28acc09b3cd7ea2acffd2d1513339b32bf7982cc5b8cdb360fdbec11dfb2b8e365cdd7c2a27a6aaf2dbb5abfeb412be3fedcd654bdd0fbf91ce35da3ca4bc0d6aadf0bd38a12dd9ae6d99597470df0ddfc80df51e168f3708d748b2538a0f6e9b3c113fab9efa58dfd23d74f9efa9f7a26ba7880e54156ef2ff9ad56bb78c7b48f060797c54d7e1298f569e8cb4d94e345b383d944b7e7ef4a3a965dd82826de6bf9fe2a892231e36ebdbf6b43a3cefa80b1556521d3c6da3d885ac490f170ca416ed5074651ccdeed918a5f6ad9f47adeb70f7b13879ced1c5216cf7bdfd1b2e94e76c799a772877d7ee16e9f2d773db9d2c1724e505dccc7dbc85e1e7f5f042aeceb401cd3926e1c9002bd69c631038c7fcf26ee96f719b10ac577e64fbcdf37d4b991503d6dff5efb476928e7b3e627f4e2353fdbd447db3ce54b95017e2d1ca4d7d070c840d9e9903c690feee1c656df72a9c33d5be997a95581656d053b7c640f8c79aa309319dbf762f0d7c7beeb2f9ce07aac4bce1cf7707954b25e6b373e4e2ced82ea73b67fd7fc29b039e771ef1374da93a326b75afaeb3639172fac39ba55e73055f7cbe02d7829541498025666a4e65036ce412c1e12560bc2470c027bbcb354d04f402eda54cdb6034d81f572aae8e06a531ff718be380cb934c22069d08dccff810314920e683011f8b03877c38b854008b59d08f47f38d35f22dc6a01aadcbd85df37c808a500da80cea24aa19752ad58a6a4db5a5b220d268a300c0a814a986f96bfb246c393cb6d4b0f619f94ef9a70685fef9d020e87f574bf51ec40e0000"
+  }
+}
+
+POST /login
+user-agent: Teller Bank iOS v1.3
+api-key: Hello-Lisbon!
+device-id: RVAG6VKOXO7QBTDL
+content-type: application/json
+accept: application/json
+{
+  "password": "el1x1r_c0nf_Lisbon",
+  "username": "numbat"
+}
+
+200 OK
+teller-is-hiring: <https://jobs.lever.co/teller/dd21975a-901b-49ee-926c-336c92f8673d>
+f-request-id: req_soqtboqsoosr3g4257eaqgij6qexfcco76qjmxi
+timestamp: 1682052357523
+request-token: QTEyOEdDTQ.yBGmUvNU9iPBtZZwpLZhLh5Z7M9InBDvi-gPMAPayB5TjwjTnzSrnYXRGhI.9nxkxffq0azPcdxe.uocxpS-VqhPE4dZEoKqIwLE_ywYFS_8qqdX79g9YfBy0pYU_VlrNqR5Zy9TtcxeFGSZDbMO6FHdGMEvjjKbUuLC4NHcOemEfXiqXVahTpReEzsKVwT5nOZAyR80oo4RmaiZ2UdNnGCOqkWqU8-vGI4M18L6h1HXUvCPEBd4IP2VYzfdeTkDywxLlaA.vxbSmsWEsn2VyT57ImL5aQ
+f-token-spec: eyJtZXRob2QiOiJoc3otZ2RsLXVyZXYtaHJjLXl6aHYtZ3NyaWdiLWdkbC1vbGR2aS14emh2LW1sLWt6d3dybXR0Iiwic2VwYXJhdG9yIjoiKyIsInZhbHVlcyI6WyJsYXN0LXJlcXVlc3QtaWQiLCJ1c2VybmFtZSIsImRldmljZS1pZCIsImFwaS1rZXkiXX0
+content-type: application/json; charset=utf-8
+{
+  "devices": [
+    {
+      "id": "sms_ad_6x2bqnms2bnuvgyir7mnitc36fbtcrlndazdk6a",
+      "mask": "***4524",
+      "type": "SMS"
+    },
+    {
+      "id": "voice_ad_6x2bqnms2bnuvgyir7mnitc36fbtcrlndazdk6a",
+      "mask": "***4524",
+      "type": "VOICE"
+    }
+  ],
+  "mfa_required": true
+}
+
+POST /login/mfa/request
+teller-is-hiring: I know!
+user-agent: Teller Bank iOS v1.3
+api-key: Hello-Lisbon!
+device-id: RVAG6VKOXO7QBTDL
+request-token: QTEyOEdDTQ.yBGmUvNU9iPBtZZwpLZhLh5Z7M9InBDvi-gPMAPayB5TjwjTnzSrnYXRGhI.9nxkxffq0azPcdxe.uocxpS-VqhPE4dZEoKqIwLE_ywYFS_8qqdX79g9YfBy0pYU_VlrNqR5Zy9TtcxeFGSZDbMO6FHdGMEvjjKbUuLC4NHcOemEfXiqXVahTpReEzsKVwT5nOZAyR80oo4RmaiZ2UdNnGCOqkWqU8-vGI4M18L6h1HXUvCPEBd4IP2VYzfdeTkDywxLlaA.vxbSmsWEsn2VyT57ImL5aQ
+f-token: knqr3nq6gnyvliya36eexaagdiut7h3izpqgh7mnb3r5vs7mgkha
+content-type: application/json
+accept: application/json
+{
+  "device_id": "sms_ad_6x2bqnms2bnuvgyir7mnitc36fbtcrlndazdk6a"
+}
+
+200 OK
+teller-is-hiring: <https://jobs.lever.co/teller/dd21975a-901b-49ee-926c-336c92f8673d>
+f-request-id: req_uaiocaf3mpaxoeqpopjbzea7i4mih5jismd262y
+timestamp: 1682052359558
+request-token: QTEyOEdDTQ.7yDQn1TKcxoTki2JnAw8B-sPSuBV_TAFyGNOscw10-lNJdBJN1QKrp-XYOo.2gMDvwBYUttU4wyg.DndT8SnDgS-8_EfYaI9wU05v7UADrN1uxnH5UPJeFi09XZJjsPrMhC9AtmvOpxRcvfZeIymI6XLgpvUPTBQ_-dekFf89wor-dPmhxG3Qowam1_jw90NxocZUnC6kLDJGrwoWZazraTf-heXiM4jgCk5zCboaZFOzjUMjYmIpMLqfZtYOrUtf7VN9srEeOXeRVTk_kwsYKw.u3Yc9Cz0R0shRdEuVvm7qg
+f-token-spec: eyJtZXRob2QiOiJoc3otZ2RsLXVyZXYtaHJjLXl6aHYtZ3NyaWdiLWdkbC1vbGR2aS14emh2LW1sLWt6d3dybXR0Iiwic2VwYXJhdG9yIjoiKyIsInZhbHVlcyI6WyJsYXN0LXJlcXVlc3QtaWQiLCJkZXZpY2UtaWQiLCJhcGkta2V5IiwidXNlcm5hbWUiXX0
+content-type: application/json; charset=utf-8
+{}
+
+POST /login/mfa
+x-token: YWhwNXZoZGt7ZzNua3N6YG99MGZlaHJ/NHRqa3k8fG5hajJneXdmengzd3hhY2pxbm95aw==
+teller-is-hiring: I know!
+user-agent: Teller Bank iOS v1.3
+api-key: Hello-Lisbon!
+device-id: RVAG6VKOXO7QBTDL
+request-token: QTEyOEdDTQ.7yDQn1TKcxoTki2JnAw8B-sPSuBV_TAFyGNOscw10-lNJdBJN1QKrp-XYOo.2gMDvwBYUttU4wyg.DndT8SnDgS-8_EfYaI9wU05v7UADrN1uxnH5UPJeFi09XZJjsPrMhC9AtmvOpxRcvfZeIymI6XLgpvUPTBQ_-dekFf89wor-dPmhxG3Qowam1_jw90NxocZUnC6kLDJGrwoWZazraTf-heXiM4jgCk5zCboaZFOzjUMjYmIpMLqfZtYOrUtf7VN9srEeOXeRVTk_kwsYKw.u3Yc9Cz0R0shRdEuVvm7qg
+f-token: khx7vhnkqe3nisrjou2febru6tjiy4vnih2gswlxx3uxiijyloya
+content-type: application/json
+accept: application/json
+{
+  "code": "001337"
+}
+
+200 OK
+teller-is-hiring: <https://jobs.lever.co/teller/dd21975a-901b-49ee-926c-336c92f8673d>
+f-request-id: req_nirkymmq7eupsmdelashosqgiep4it5ebcxt3xq
+timestamp: 1682052362263
+<!-- A128GCM -->
+request-token: QTEyOEdDTQ.mxmAQbfAs-7yHCrXtX4qah1-0aM8aS25JrdxTuMjQJQWr-jyU9LRmJFns5w.-86gGAjR2k4TMcVk.eOhFLmEEoAUtY74pQVTxXIQJ9TzM0vy235jR2wYuDaaVNqK6jrFtWy9H8OBTd30joBpEEpueX-qBVNmAmOgdJ3F902GjD4SmJVE-3NuVsBjfdlTXx88tLhYuWyTaqpBP1kFAbT6CmVSAfZIHI-BpaejQ9ELoEV2dsSLcKeLAP7m-nrpwRqhDeAH5aC8VYHg
+.ySvSSHLCV86ryEmUF4BMIQ
+f-token-spec: eyJtZXRob2QiOiJoc3otZ2RsLXVyZXYtaHJjLXl6aHYtZ3NyaWdiLWdkbC1vbGR2aS14emh2LW1sLWt6d3dybXR0Iiwic2VwYXJhdG9yIjoiKyIsInZhbHVlcyI6WyJsYXN0LXJlcXVlc3QtaWQiLCJ1c2VybmFtZSIsImFwaS1rZXkiLCJkZXZpY2UtaWQiXX0
+content-type: application/json; charset=utf-8
+{
+  "accounts": {
+    "checking": [
+      {
+        "id": "acc_wmz5kqq374jzntiak7gzsaqgsjaxqnhaosdcvoq",
+        "masked_number": "0486",
+        "name": "My Checking",
+        "product": "Flex Checking Account"
+      }
+    ]
+  },
+  "enc_session_key": "ewogICJjaXBoZXIiOiAiMTI4LUVDQiIsCiAgImtleSI6ICJFdG9pZzU2R3VKRjFndDB5WThyTzdFbkhWNHFxbmR6OWtpRGFIYVIwTFpnPSIKfQ==",
+  "offers": [
+    {
+      "code": "1234",
+      "message": "You're eligible for our Premium Metal Credit Card"
+    },
+    {
+      "code": "2345",
+      "message": "Teller is hiring! Come talk to us."
+    }
+  ],
+  "user": {
+    "name": "José"
+  }
+}
+
+GET /accounts/acc_wmz5kqq374jzntiak7gzsaqgsjaxqnhaosdcvoq/balances
+teller-is-hiring: I know!
+user-agent: Teller Bank iOS v1.3
+api-key: Hello-Lisbon!
+device-id: RVAG6VKOXO7QBTDL
+request-token: QTEyOEdDTQ.mxmAQbfAs-7yHCrXtX4qah1-0aM8aS25JrdxTuMjQJQWr-jyU9LRmJFns5w.-86gGAjR2k4TMcVk.eOhFLmEEoAUtY74pQVTxXIQJ9TzM0vy235jR2wYuDaaVNqK6jrFtWy9H8OBTd30joBpEEpueX-qBVNmAmOgdJ3F902GjD4SmJVE-3NuVsBjfdlTXx88tLhYuWyTaqpBP1kFAbT6CmVSAfZIHI-BpaejQ9ELoEV2dsSLcKeLAP7m-nrpwRqhDeAH5aC8VYHg.ySvSSHLCV86ryEmUF4BMIQ
+f-token: boqfrm24yqzuk66opzjftlvqmedgdhqdac4fjfyvi7u3jzii2zma
+accept: application/json
+
+200 OK
+teller-is-hiring: <https://jobs.lever.co/teller/dd21975a-901b-49ee-926c-336c92f8673d>
+f-request-id: req_6rxxm6ghvd6awd2xoysahbwevdsaxio3a5d22ny
+timestamp: 1682052368659
+request-token: QTEyOEdDTQ.svZ5LPu5kQRLXfQ6INLUZS_ZPsK-h7tEXT93bUe7EJs9xtuyu9IEFqplHCo.7wQRNKlSWYPF_kpp.8vmzx7zRgygZ_qFyKpQW58ZhhLc0oYWU9AD_q3jXWeQiVfel9GPAfP3GKGkK_9P4yJg7DyqkFdZ_M_AN5RjiStaQnCdyUje7UstYYi12ScWVUzAzF8uPR6jIhwFDYrfAmjlK3kHXCvcztXA2672r8chfazzX9JuwT-chy2tmmwouw0LvI4AskMVYYjtbhJwqXT0j17if.inP26QhUAITIwPT56Qxhuw
+f-token-spec: eyJtZXRob2QiOiJoc3otZ2RsLXVyZXYtaHJjLXl6aHYtZ3NyaWdiLWdkbC1vbGR2aS14emh2LW1sLWt6d3dybXR0Iiwic2VwYXJhdG9yIjoiJCIsInZhbHVlcyI6WyJhcGkta2V5IiwiZGV2aWNlLWlkIiwibGFzdC1yZXF1ZXN0LWlkIiwidXNlcm5hbWUiXX0
+content-type: application/json; charset=utf-8
+{
+  "available": 458252,
+  "last_transactions": [
+    {
+      "amount": -399,
+      "posted": false,
+      "title": "Single Origin Espresso - Altis Grand"
+    },
+    {
+      "amount": -479,
+      "posted": false,
+      "title": "Artisanal chocolate chip cookie"
+    },
+    {
+      "amount": -999,
+      "posted": true,
+      "title": "MAINTENANCE FEE"
+    },
+    {
+      "amount": -1999,
+      "posted": true,
+      "title": "Openai chatgpt sub"
+    },
+    {
+      "amount": -299,
+      "posted": true,
+      "title": "metro fare"
+    }
+  ],
+  "ledger": 468252
+}
