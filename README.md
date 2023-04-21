@@ -1,13 +1,3 @@
----
-title: Livebook
-emoji: 📓
-colorFrom: pink
-colorTo: purple
-sdk: docker
-fullWidth: true
-duplicated_from: livebook-dev/livebook
----
-
 # teller_bank_job
 
 <https://lisbon.teller.engineering/>
