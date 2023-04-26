@@ -12,7 +12,7 @@ duplicated_from: livebook-dev/livebook
 
 <https://lisbon.teller.engineering/>
 
-My submission for the Teller Bank Job challenge for ElixirConf EU 2023.
+My submission for the Teller Bank Job challenge held during ElixirConf EU 2023.
 
 Try it out as a Hugging Face space here (user `blue_chloe` and pass `portugal`):
 
